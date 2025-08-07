@@ -4,10 +4,10 @@ import review from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <div>
+    <div className="App-container">
+      <div className="app">
         <h1>Our Testimonials</h1>
-        <div></div>
+        <div className="underline"></div>
         <Testimonial review={review} />
       </div>
     </div>

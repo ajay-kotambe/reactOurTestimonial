@@ -1,14 +1,19 @@
 .card-wrapper {
   position: relative;
-  max-width: 500px;
+  max-width: 565px;
   margin: 80px auto 40px; /* More space at top for image overlap */
+}
+@media (min-width: 768px) {
+  .card-wrapper {
+    position: relative;
+  }
 }
 
 .profile-img-wrapper {
   position: absolute;
   top: -42px;
   left: 21px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .profile-img-wrapper img {
@@ -19,6 +24,16 @@
   border: 4px solid white;
   box-shadow: 0 0 0 4px #f0f0f0;
 }
+.img-back-wrapper {
+  position: absolute;
+  z-index: 3;
+  top: -51px;
+  left: 36px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: #8b5cf6;
+}
 
 /* Card box */
 .card {
@@ -27,7 +42,7 @@
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   box-shadow: 0 4px 20px #0000001a;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   justify-items: center;
   align-items: center;
   padding-left: 100px; /* Add space for the image on left */
@@ -51,10 +66,10 @@
 
 /* Testimonial text */
 .card-text .icon {
-  justify-items: center;
-  align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #a78bfa;
+  text-align: center;
+  margin-bottom: 10px; /* spacing */
 }
 
 .card-text p {
@@ -67,7 +82,7 @@
 /* Arrows */
 .nav-buttons {
   /* margin-right: 200px; */
-  /* padding: 28px 0px;    */
+  /* padding: 28px 0px;    */  
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -97,7 +112,7 @@
   color: white;
   padding: 0.6rem 1.5rem;
   font-size: 1rem;
-  
+
   border-radius: 8px;
   border: none;
   cursor: pointer;

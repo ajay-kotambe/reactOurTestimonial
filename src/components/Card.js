@@ -7,6 +7,7 @@ const Card = ({ data }) => {
       <div className="profile-img-wrapper">
         <img src={data.image} alt={data.name} />
       </div>
+      <div className="img-back-wrapper"></div>
 
       <div className="card">
         <div className="card-info">
@@ -22,15 +23,6 @@ const Card = ({ data }) => {
           <div className="icon">
             <FaQuoteRight />
           </div>
-        </div>
-
-        <div className="nav-buttons">
-          <button>{"<"}</button>
-          <button>{">"}</button>
-        </div>
-
-        <div className="surprise-button">
-          <button className="surprise">Surprise Me</button>
         </div>
       </div>
     </div>
