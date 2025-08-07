@@ -1,10 +1,11 @@
-import Card from "./Card"
+import Card from "./Card";
 
-const Testimonial = () => {
-
-    return <div>
-        <Card/>
+const Testimonial = ({ review }) => {
+  return (
+    <div>
+      <Card data={review[0]} />
     </div>
+  );
 };
 
 export default Testimonial;

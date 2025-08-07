@@ -1,0 +1,109 @@
+.card-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 80px auto 40px; /* More space at top for image overlap */
+}
+
+.profile-img-wrapper {
+  position: absolute;
+  top: -42px;
+  left: 21px;
+  z-index: 2;
+}
+
+.profile-img-wrapper img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px #f0f0f0;
+}
+
+/* Card box */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 4px 20px #0000001a;
+  position: relative;
+  z-index: 1;
+  justify-items: center;
+  align-items: center;
+  padding-left: 100px; /* Add space for the image on left */
+}
+
+/* Name & job */
+.card-info h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.card-info h5 {
+  margin-top: -1px;
+  padding: 1px 7px;
+  font-size: 0.6rem;
+  color: #a78bfa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Testimonial text */
+.card-text .icon {
+  justify-items: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #a78bfa;
+}
+
+.card-text p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+/* Arrows */
+.nav-buttons {
+  /* margin-right: 200px; */
+  /* padding: 28px 0px;    */
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.nav-buttons button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #a78bfa;
+  transition: transform 0.2s ease;
+}
+
+.nav-buttons button:hover {
+  transform: scale(1.2);
+}
+
+/* Surprise button */
+.surprise-button {
+  text-align: center;
+}
+
+.surprise-button .surprise {
+  background-color: #a78bfa;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.surprise-button .surprise:hover {
+  background-color: #8b5cf6;
+}
